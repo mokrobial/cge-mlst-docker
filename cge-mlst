@@ -26,6 +26,7 @@ RUN git clone https://bitbucket.org/genomicepidemiology/mlst.git \
 RUN git clone https://bitbucket.org/genomicepidemiology/mlst_db.git \
 	cd mlst_db
 # Install MLST database with executable kma_index program
+RUN git clone https://bitbucket.org/genomicepidemiology/kma.git
 RUN python3 INSTALL.py kma_index \
 	mkdir /data
 
